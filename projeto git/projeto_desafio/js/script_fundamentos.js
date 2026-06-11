@@ -77,4 +77,28 @@ console.log(`O resto da divisão entre 10 e 2 é: ${10 % 2}`)
 */ 
 
 //TESTE LÓGICO 
-if()
+let idade = 40
+
+if(idade >= 18) {
+    console.log("maior de idade")
+}else{
+    console.log("menor de idade")
+}
+
+idade >= 18 ? console.log("maior de idade"): console.log ("menor de idade")
+
+/**
+ Renovação de CNH 
+   18 até 49 -> 10 anos
+   50 até 69 -> 5 anos 
+   70 acima -> 3 anos
+ */
+
+//ANINHAMENTO DE IF 
+if(idade < 18){
+     console.log(` COM ${idade}, NÃO É PERMITIDO POSSUIR CNH `)
+}else if (idade<50){
+    console.log(`COM ${idade}, O TEMPO PARA RENOVAÇÃO É DE 10 ANOS `)
+}else if (idade<70){
+    console.log(`COM ${idade}, O TEMPO PARA RENOVAÇÃO É DE 3 ANOS`)
+}
